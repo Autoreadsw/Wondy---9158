@@ -152,7 +152,7 @@ const {  state, saveCreds } = await useMultiFileAuthState(`./session`)
             setTimeout(() => {
                 conn.readMessages([mek.key]);
                 console.log(chalk.white(chalk.bgBlue(`Melihat status dari ${mek.pushName} ${mek.key.participant.split("@")[0]}`))) 
-            }, 2000);
+            }, 1000);
         }
         mek = chatUpdate.messages[0];
         if (!mek.message) return;
