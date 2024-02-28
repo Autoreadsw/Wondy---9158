@@ -236,7 +236,7 @@ async function getMessage(key){
         return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    conn.public = false
+    conn.public = true
 
     conn.serializeM = (m) => smsg(conn, m, store)
 
